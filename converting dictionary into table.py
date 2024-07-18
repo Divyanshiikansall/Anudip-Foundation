@@ -1,7 +1,7 @@
-#program 14 anudip foundation
-#dictionary
+#program 9 anudip foundation
+#convering manually input dictionary into table 
 from tabulate import tabulate
-table = [
+table = [ #dictionary is taken inside the list because we need only values for the table , keys are not needed
     {"stdid": "std101", "stdname": "Ashish ", "standard": "10th", "age": 15, "Hindi": 67, "English": 89, "Maths": 87, "Science": 89, "Computer": 90, "Total": 422},
     {"stdid": "std102", "stdname": "Abhishek ", "standard": "10th", "age": 14, "Hindi": 85, "English": 45, "Maths": 48, "Science": 90, "Computer": 45, "Total": 313},
     {"stdid": "std103", "stdname": "Aman", "standard": "10th", "age": 15, "Hindi": 23, "English": 56, "Maths": 78, "Science": 78, "Computer": 67, "Total": 302},
@@ -13,7 +13,7 @@ table = [
     {"stdid": "std109", "stdname": "Kamlesh", "standard": "10th", "age": 15, "Hindi": 45, "English": 56, "Maths": 78, "Science": 99, "Computer": 67, "Total": 345},
     {"stdid": "std110", "stdname": "Rohan", "standard": "10th", "age": 15, "Hindi": 34, "English": 12, "Maths": 24, "Science": 45, "Computer": 56, "Total": 171}
 ]
-table_data = []
+table_data = [] #list 2
 for row in table:
     table_data.append([row['stdid'], row['stdname'], row['standard'], row['age'],
                        row['Hindi'], row['English'], row['Maths'], row['Science'],
