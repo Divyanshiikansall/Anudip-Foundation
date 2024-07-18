@@ -1,4 +1,4 @@
-#program 9 anudip foundation
+#program 6 anudip foundation
 # for loop example 2
 total_num=0 # used for counting total number which satisfy given condition
 print("total numbers between 100 to 1000 which are even and divisble be 3:")
