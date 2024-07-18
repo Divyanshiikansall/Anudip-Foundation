@@ -1,0 +1,16 @@
+#program 1 anudip foundation
+#implementing if-else statement through time conversion example
+sec = int(input("Enter time in seconds : "))  #taking time in seconds as input from user
+if(sec>=0):
+    hour =0
+    minu =0
+    if(sec >= 3600):        # 1 hour = 3600 seconds
+        hour = sec // 3600  
+        sec = sec % 3600    #remaining time in seconds after converting it into hours
+    if(sec >= 60):
+        minu = sec // 60   #converting time into minutes
+        sec = sec % 60
+    print(hour , " hours " , minu ,"minutes" , sec , "seconds")
+else:
+    print(" invalid time")
+    
